@@ -74,7 +74,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-col.s5{width:41.66666%}.w3-col.s6{width:49.99999%}.w3-col.s7{width:58.33333%}.w3-col.s8{width:66.66666%}
 .w3-col.s9{width:74.99999%}.w3-col.s10{width:83.33333%}.w3-col.s11{width:91.66666%}.w3-col.s12{width:99.99999%}
 @media (min-width:601px){.w3-col.m1{width:8.33333%}.w3-col.m2{width:16.66666%}.w3-col.m3,.w3-quarter{width:24.99999%}.w3-col.m4,.w3-third{width:33.33333%}
-.w3-col.m5{width:41.66666%}.w3-col.m6,.w3-half{width:49.99999%}.w3-col.m7{width:58.33333%}.w3-col.m8,.w3-twothird{width:66.66666%}
+.w3-col.m5{width:41.66666%}.w3-col.m6,.w3-half{width:33.33333%}.w3-col.m7{width:58.33333%}.w3-col.m8,.w3-twothird{width:66.66666%}
 .w3-col.m9,.w3-threequarter{width:74.99999%}.w3-col.m10{width:83.33333%}.w3-col.m11{width:91.66666%}.w3-col.m12{width:99.99999%}}
 @media (min-width:993px){.w3-col.l1{width:8.33333%}.w3-col.l2{width:16.66666%}.w3-col.l3{width:24.99999%}.w3-col.l4{width:33.33333%}
 .w3-col.l5{width:41.66666%}.w3-col.l6{width:49.99999%}.w3-col.l7{width:58.33333%}.w3-col.l8{width:66.66666%}
@@ -161,12 +161,12 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-indigo,.w3-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
 .w3-khaki,.w3-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
 .w3-lime,.w3-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
-.w3-orange,.w3-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.w3-orange,.w3-hover-orange:hover{color:#000!important;background-color:#ff9900!important}
 .w3-deep-orange,.w3-hover-deep-orange:hover{color:#fff!important;background-color:#b3634b!important}
 .w3-pink,.w3-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
 .w3-purple,.w3-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
 .w3-deep-purple,.w3-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
-.w3-red,.w3-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.w3-red,.w3-hover-red:hover{color:#fff!important;background-color:#ffae00!important}
 .w3-sand,.w3-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
 .w3-teal,.w3-hover-teal:hover{color:#fff!important;background-color:#009688!important}
 .w3-yellow,.w3-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
@@ -196,7 +196,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-text-pink,.w3-hover-text-pink:hover{color:#e91e63!important}
 .w3-text-purple,.w3-hover-text-purple:hover{color:#9c27b0!important}
 .w3-text-deep-purple,.w3-hover-text-deep-purple:hover{color:#673ab7!important}
-.w3-text-red,.w3-hover-text-red:hover{color:#f44336!important}
+.w3-text-red,.w3-hover-text-red:hover{color:#ffae00!important}
 .w3-text-sand,.w3-hover-text-sand:hover{color:#fdf5e6!important}
 .w3-text-teal,.w3-hover-text-teal:hover{color:#009688!important}
 .w3-text-yellow,.w3-hover-text-yellow:hover{color:#d2be0e!important}
@@ -233,3 +233,4 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#616161!important}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+/* sam smells */
