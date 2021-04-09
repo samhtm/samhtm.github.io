@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Sam Smells</title>
+<title>Hot Beans Web Development (smelly)</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css"> 
@@ -17,18 +17,18 @@ body {font-size:16px;}
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Hot Beans<br></b></h3>
+    <h3 class="w3-padding-64"><a href="#aboutus"><img src="w3images/Logo.svg" alt="Hot Beans Logo" style="scale: 75%;"></a></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a>
-        <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">The Team</a> 
+    <a href="#aboutus" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">The Team </a> 
     <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a>  
-    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Courses</a> 
+    <a href="#courses" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Courses</a> 
     <a href="#apply" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Apply</a>
   </div>
 </nav>
 
-<!-- Top menu on small screens -->
+<!-- Top menu on mobile screens -->
 <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
   <span>Hot Beans</span>
@@ -37,17 +37,17 @@ body {font-size:16px;}
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- !PAGE CONTENT! -->
+<!-- >>>>>!!!!PAGE CONTENT!!!!<<<<< -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Header -->
-  <div class="w3-container" style="margin-top:0px" id="showcase">
+  <div class="w3-container" style="margin-top:0px" id="aboutus">
     <h1 class="w3-jumbo" style="color: #ffae00;"><b>Hot Beans</b></h1>
     <p>Welcome to Hot Beans Web Development. We are a family run business based in the centre of Colchester, Essex. Our experienced team is ready to get your business online.</p>
   </div>
 
     <!-- Designers -->
-  <div class="w3-container" id="designers" style="margin-top:25px">
+  <div class="w3-container" id="team" style="margin-top:25px">
     <h1 class="w3-xxxlarge w3-text-red"><b>The Team</b></h1>
     <hr style="width:50px;border:5px solid #ffae00" class="w3-round">
     <p>Below are the founders of our team. Between them they have a portfolio of 1,000s of happy and satifised clients, showing you just what they can achieve. All our senior developers
@@ -62,11 +62,11 @@ body {font-size:16px;}
   <div class="w3-row-padding w3-grayscale">
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
-        <img src="w3images/team2.jpg" alt="Dave, our CEO and Founder" style="width:100%">
+        <img src="w3images/team2.jpg" alt="Charles, our CEO and Founder" style="width:100%">
         <div class="w3-container">
-          <h3>Dave Cooper</h3>
+          <h3>Charles Cooper</h3>
           <p class="w3-opacity">CEO & Founder</p>
-          <p>Dave founded the company back in 2013 and since then has been working to perfect clients websites to ensure they meet their requirements. In his downtime, Dave enjoys cycling, golf and playing Chess.</p>
+          <p>Charles founded the company back in 2013 and since then has been working to perfect clients websites to ensure they meet their requirements. In his downtime, Charles enjoys cycling, golf and playing Chess.</p>
         </div>
       </div>
     </div>
@@ -105,7 +105,7 @@ body {font-size:16px;}
   
 
   <!-- Packages / Pricing Tables -->
-  <div class="w3-container" id="packages" style="margin-top:75px">
+  <div class="w3-container" id="courses" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Courses</b></h1>
     <hr style="width:50px;border:5px solid #ffae00" class="w3-round">
     <p>If you are looking at joining us or any other web development company then experience is key and a good way to prove experience is with courses or qualifications. Below are some courses
@@ -115,32 +115,34 @@ body {font-size:16px;}
 
   <div class="w3-row-padding">
   <!-- sam smells -->
-    <div class="w3-half w3-margin-bottom">
+    <div class="w3-half w3-margin-bottom w3-dark">
       <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16">Floorplanning</li>
-        <li class="w3-padding-16">10 hours support</li>
-        <li class="w3-padding-16">Photography</li>
-        <li class="w3-padding-16">20% furniture discount</li>
-        <li class="w3-padding-16">Good deals</li>
+        <li class="w3-light-grey w3-xlarge w3-padding-32">Basic Courses</li>
+        <li class="w3-padding-16">For those who have little knowledge of HTML and its relevant languages</li>
+        <li class="w3-padding-16">A good starting place for learning HTML</li>
+        <li class="w3-padding-16">Takes you step by step</li>
+        <li class="w3-padding-16">Online community support</li>
+        <li class="w3-padding-16">This is all bullshit</li>        
+        <li class="w3-padding-16">Online community support</li>
         <li class="w3-padding-16">
-          <h2>$ 199</h2>
-          <span class="w3-opacity">per room</span>
+          <h2>FREE</h2>
+          <span class="w3-opacity">courses</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          <button class="w3-button w3-white w3-padding-large w3-hover-black" onclick="window.open('https://www.khanacademy.org/computing/computer-programming/html-css', '_blank')">Khan Academy</button>
+          <button class="w3-button w3-white w3-padding-large w3-hover-black" onclick="window.open('https://www.codecademy.com/catalog/language/html-css', '_blank')">Codecademy</button>
         </li>
       </ul>
     </div>
         
     <div class="w3-half">
       <ul class="w3-ul w3-light-grey w3-center">
-        <li class=" w3-xlarge w3-padding-32">Intermediate</li>
+        <li class="w3-xlarge w3-padding-32 w3-dark-grey">Intermediate Courses</li>
         <li class="w3-padding-16">Floorplanning</li>
         <li class="w3-padding-16">50 hours support</li>
         <li class="w3-padding-16">Photography</li>
         <li class="w3-padding-16">50% furniture discount</li>
-        <li class="w3-padding-16">GREAT deals</li>
+        <li class="w3-padding-16">Mediocre deals</li>
         <li class="w3-padding-16">
           <h2>$ 249</h2>
           <span class="w3-opacity">per room</span>
@@ -153,14 +155,14 @@ body {font-size:16px;}
 
     <div class="w3-half">
       <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-red w3-xlarge w3-padding-32">Professional</li>
+        <li class="w3-red w3-xlarge w3-padding-32">Professional Courses</li>
         <li class="w3-padding-16">Floorplanning</li>
         <li class="w3-padding-16">50 hours support</li>
         <li class="w3-padding-16">Photography</li>
         <li class="w3-padding-16">50% furniture discount</li>
-        <li class="w3-padding-16">GREAT deals</li>
+        <li class="w3-padding-16">Amazing deals</li>
         <li class="w3-padding-16">
-          <h2>$ 249</h2>
+          <h2>$ 249,999,999</h2>
           <span class="w3-opacity">per room</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
@@ -190,13 +192,16 @@ body {font-size:16px;}
       </div>
       <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
     </form>  
+
+
+
   </div>
 
 <!-- End page content -->
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">copious amounts of drugs</a></p></div>
 
 <script>
 // Script to open and close sidebar
@@ -217,59 +222,8 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+
 </script>
 
 </body>
 </html>
-<!-- Sam smells really bad -->
-                                  hatthefuc                                         
-                              kdidyoujustfuckin                                     
-                          gsayaboutme,youlittlebit                                  
-                  ch?I’llhaveyouk           nowIgrad                                
-               uatedtopofmyc                  lassint                               
-             heNavySeals,and                   I’vebe                               
-             eninvolvedinnume                   rouss                               
-             ecretraidso nAl-Qu    aeda,andIha  veove                               
-             r300confirmedkills. Iamtrainedingor illa                               
-             warfareandI’mthet  opsniperintheentireUS                               
-            armed  forces.Youa  renothingtomebutjusta                               
-           nothertarget.Iwillwi peyouthefuc koutwithp                               
-          recisionthelikesofw   hichhasneverbeenseenb                               
-         eforeonthisEarth,markmyfuckingwords.  Youth                                
-        inkyo          ucangetawaywithsay     ingtha                                
-       tshit                      tomeove     rtheIn                                
-      ternet                                 ?Think                                 
-     again,                                 fucker                                  
-    .Aswes                                  peakIa                                  
-    mcont                      acti        ngmyse                                   
-    cret                      netwo rko   fspies                                    
-    acro                      sstheUSAan  dyour                         IPisbeing   
-   trace                      drightnow  soyou                        betterprepar  
-   efort                     hestorm,ma ggot.                       Thesto    rmth  
-   atwip                     esoutthep  athet                     iclittl    ethin  
-   gyouc                    allyourli  fe.You                   ’refuck     ingde   
-   ad,ki                    d.Icanbe   anywhere,anytime,and   Icankil     lyoui     
-    nove                   rsevenhu    ndredways,andthat’sjustwithm      ybare      
-    hand                   s.Noton     lyamI   exten   sivelytrai      nedinu       
-    narm                  edcombat      ,bu   tIhaveaccesstothe      entire         
-    arsen               aloft heUni         tedStatesMarineCor     psandIw          
-     illu             seitt  oitsful         lextenttowipeyourmi   serablea         
-     ssoff            thefaceoftheco                     ntinent,    youlittle      
-      shit.            Ifonlyyoucou              ldha       veknow  nwha tunho      
-      lyretr              ibut                   iony        ourlit  tle“clev       
-       er”com                                men              twasa    bout         
-        tobringd                            ownu              ponyo     u,ma        
-           ybeyouw                          ould              haveheldyourfu        
- cki        ngtongue.B                       utyo           ucouldn’t,youdi         
-dn’t,an    dnowyou’repayingt                  hep         rice,yo    u              
-goddamnidiot.I willshitfuryalloveryo           uand    youwill                      
-drow ninit.You’refu    ckingdead,kiddo .Whatthefuckdidyoujus                        
- tfuc  kingsayabo         utme,youlit tlebitch?I’llhaveyo                           
-  ukno   wIgrad         uatedtopofmy class intheNavySe                              
-   als,andI’v           ebeeninvolv  edin                                           
-    numerou              ssecretr   aids                                            
-      onA                l-Quae    da,a                                             
-                          ndIhav  eove                                              
-                           r300confir                                               
-                             medkill                                                
-                               s.I    
