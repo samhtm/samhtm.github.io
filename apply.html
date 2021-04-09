@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Hot Beans Jobs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="shortcut icon" href="w3images/favicon.ico"/>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><a href="#aboutus"><img src="w3images/Logo.svg" alt="Hot Beans Logo" style="scale: 75%;"></a></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">↩ Back to main site</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on mobile screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+<a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+<span>Hot Beans</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- >>>>>!!!!PAGE CONTENT!!!!<<<<< -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Job Applications</b></h1>
+    <hr style="width:50px;border:5px solid #ffae00" class="w3-round">
+    <p>Welcome to our job application page. Here you can apply for any current vacancies we have on offer. Alternatively you can upload your CV, by selecting the "Other" option and we may contact you if a suitable job becomes avaiable.</p>
+    <form name="myForm">
+    <div>
+        <br>
+        <b> Please note that all applicants must have achieved A level (or equivalent) grades of BBC. Any unsatifactory grades will likely result in the refusal of your application.</b>
+        <br>
+        <label>First name:</label><br>
+        <input type="text" name="fname" placeholder="First name" style="width: 100%"><span class="warningfname"></span><br><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" name="lname" placeholder="Last name" style="width: 100%"><span class="warninglname"></span><br>
+        <br>
+        <label for="email">Email</label><br>
+        <input type="text" name="email" placeholder="Email address" style="width: 100%"><span class="warningemail"></span><br>
+        <br>
+        <label for="phonenumber">Phone number</label><br>
+        <input type="text" name="phonenumber" placeholder="Phone number" style="width: 100%"><span class="warningphonenumber"></span><br>
+
+        
+        <br>
+            <label>Job role:</label><br>
+        <select name="Role" style="width: 100%">
+        <option value="" selected disabled>Select a role...</option>  
+        <option value="Trainee Front End Web Developer">Trainee Front End Web Developer</option>
+        <option value="Trainee Back End Web Developer">Trainee Back End Web Developer</option>
+        <option value="Trainee Client Support Assistant">Trainee Client Support Assistant</option>
+        <option value="Trainee Graphic Designer">Trainee Graphic Designer</option>
+        <option value="Senior Technical Support Assistant">Senior Technical Support Assistant</option>
+        <option value="Other">Other</option>
+        
+        </select><span class="warningrole"></span>
+        <br>
+        
+        <p>Upload your CV here:</p>
+        <br>
+        <label for="myfile" >Select a file</label>
+        <input type="file" name="myfile"> <span class="warningmyfile"></span><br><br>
+    </div>
+
+        <input type="Button" value="Submit" onclick="submitForm" class="w3-button w3-black w3-padding-large">
+    </form> 
+</div>
+
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">copious amounts of drugs</a></p></div> 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    } else {
+    mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+/**
+ * Validates and submits and the form
+ */
+function submitForm() {
+    if (validateForm()) {
+        var fname = document.forms["myForm"]["fname"].innerHTML = "";
+        var lname = document.forms["myForm"]["lname"].innerHTML = "";
+        var email = document.forms["myForm"]["email"].innerHTML = "";
+        var phone = document.forms["myForm"]["phonenumber"].innerHTML = "";
+        alert("Your application has been submitted!");
+    }
+}
+
+/**
+ * Checks each input in the form for if it is blank
+ * 
+ * @return false if the any input is blank, or true otherwise
+ */
+function validateForm() {    
+    var fname = document.forms["myForm"]["fname"].value;
+    var lname = document.forms["myForm"]["lname"].value;
+    var email = document.forms["myForm"]["email"].value;
+    var phone = document.forms["myForm"]["phonenumber"].value;
+    var myfile = document.forms["myForm"]["myfile"].value;
+    var role = document.querySelector('select[name="Role"]');
+
+    var broken = false;
+    
+    if (fname == "") {
+        if (!broken) alert("Please enter a valid forename and do not leave this field blank");
+        document.getElementsByClassName("warningfname")[0].innerHTML = " * Required";  
+        broken = true;
+    } else {
+        document.getElementsByClassName("warningfname")[0].innerHTML = "";
+    }
+
+    if (lname == "") {
+        if (!broken) alert("Please enter a valid surname and do not leave this field blank");
+        document.getElementsByClassName("warninglname")[0].innerHTML = " * Required"
+        broken = true;
+    } else {
+        document.getElementsByClassName("warninglname")[0].innerHTML = "";  
+    }
+
+    if (email == "") {
+        if (!broken) alert("Please enter a valid email address and do not leave this field blank");
+        document.getElementsByClassName("warningemail")[0].innerHTML = " * Required"
+        broken = true;
+    } else {
+        document.getElementsByClassName("warningemail")[0].innerHTML = "";  
+    }
+
+    if (phone == "") {
+        if (!broken) alert("Please enter a valid phone number and do not leave this field blank");
+        document.getElementsByClassName("warningphonenumber")[0].innerHTML = " * Required"
+        broken = true;
+    } else {
+        document.getElementsByClassName("warningphonenumber")[0].innerHTML = "";  
+    }
+
+    if (role.value == "") {
+        if (!broken) alert("Please choose a job role");
+        document.getElementsByClassName("warningrole")[0].innerHTML = " * Required"
+        broken = true;
+    } else {
+        document.getElementsByClassName("warningrole")[0].innerHTML = ""; 
+    }
+
+    if (myfile == "") {
+        if (!broken) alert("Please attach a recent CV or cover letter");
+        document.getElementsByClassName("warningmyfile")[0].innerHTML = " * Required"
+        broken = true;
+    } else {
+        document.getElementsByClassName("warningmyfile")[0].innerHTML = "";   
+    }
+        
+    return !broken;
+}
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+
+
+</script>
+
+</body>
