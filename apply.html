@@ -20,7 +20,7 @@ body {font-size:16px;}
       <h3 class="w3-padding-64"><a href="#aboutus"><img src="w3images/Logo.svg" alt="Hot Beans Logo" style="scale: 75%;"></a></h3>
     </div>
     <div class="w3-bar-block">
-      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">↩ Back to main site</a>
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">← Back to main site</a>
     </div>
   </nav>
 
@@ -75,7 +75,7 @@ body {font-size:16px;}
         <input type="file" name="myfile"> <span class="warningmyfile"></span><br><br>
     </div>
 
-        <input type="Button" value="Submit" onclick="submitForm" class="w3-button w3-black w3-padding-large">
+        <input type="Button" value="Submit" onclick="submitForm()" class="w3-button w3-black w3-padding-large">
     </form> 
 </div>
 
@@ -111,10 +111,10 @@ function w3_close() {
  */
 function submitForm() {
     if (validateForm()) {
-        var fname = document.forms["myForm"]["fname"].innerHTML = "";
-        var lname = document.forms["myForm"]["lname"].innerHTML = "";
-        var email = document.forms["myForm"]["email"].innerHTML = "";
-        var phone = document.forms["myForm"]["phonenumber"].innerHTML = "";
+        var fname = document.forms["myForm"]["fname"].value = "";
+        var lname = document.forms["myForm"]["lname"].value = "";
+        var email = document.forms["myForm"]["email"].value = "";
+        var phone = document.forms["myForm"]["phonenumber"].value = "";
         alert("Your application has been submitted!");
     }
 }
